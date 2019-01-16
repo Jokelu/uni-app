@@ -1,0 +1,50 @@
+
+.cell {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  border-bottom: solid 1px #F5F5F5;
+  box-sizing: border-box;
+  padding: 10px;
+  background: #fff;
+}
+.label {
+  width: 60px;
+  text-align: right;
+  font-size: 14px;
+}
+.login {
+  width: 80vw;
+  background: #1296DB;
+  color: #fff;
+  margin: 20px auto;
+}
+.help {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-top: 25px;
+  font-size: 14px;
+}
+.put {
+  padding-left: 15px;
+  font-size: 14px;
+}
+.holder {
+  color: #666;
+  font-size: 14px;
+}
+.regist {
+  color: #1296db;
+  margin-right: 10px;
+  text-decoration: underline;
+}

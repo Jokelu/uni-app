@@ -1,0 +1,96 @@
+<template name="4e9aef18">
+  <view class="_view data-v-5436435e content">
+    <swiper class="_swiper data-v-5436435e swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" duration="{{duration}}">
+      <swiper-item wx:key="index" key="{{index}}" wx:for="{{banner}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-5436435e">
+        <view class="_view data-v-5436435e swiper-item">
+          <image class="_image data-v-5436435e item" src="{{item.img}}" mode></image>
+        </view>
+      </swiper-item>
+    </swiper>
+    <view class="_div data-v-5436435e houseinfo">
+      <view class="_div data-v-5436435e title">
+        <view class="_div data-v-5436435e name">出租（同城）整体急转四通商场临街旺铺，老店接受盈利</view>
+        <view class="_p data-v-5436435e">发布：2小时前</view>
+      </view>
+      <view class="_div data-v-5436435e price">
+        <view class="_div data-v-5436435e item">
+          <view class="_p data-v-5436435e">月租金</view>
+          <view class="_p data-v-5436435e">面议</view>
+        </view>
+        <view class="_div data-v-5436435e item">
+          <view class="_p data-v-5436435e">面积</view>
+          <view class="_p data-v-5436435e">90m² </view>
+        </view>
+        <view class="_div data-v-5436435e item">
+          <view class="_p data-v-5436435e">日租金</view>
+          <view class="_p data-v-5436435e">面议</view>
+        </view>
+      </view>
+      <view class="_div data-v-5436435e info">
+        <view class="_div data-v-5436435e row">
+          <view class="_p data-v-5436435e">面宽：
+            <label class="_span data-v-5436435e">8m</label>
+          </view>
+          <view class="_p data-v-5436435e">层高：
+            <label class="_span data-v-5436435e">3m</label>
+          </view>
+          <view class="_p data-v-5436435e">付款方式：
+            <label class="_span data-v-5436435e">押一付一</label>
+          </view>
+          <view class="_p data-v-5436435e">起租期：
+            <label class="_span data-v-5436435e">暂无</label>
+          </view>
+          <view class="_p data-v-5436435e">状态：
+            <label class="_span data-v-5436435e">经营中</label>
+          </view>
+        </view>
+        <view class="_div data-v-5436435e row">
+          <view class="_p data-v-5436435e">进深：
+            <label class="_span data-v-5436435e">8m</label>
+          </view>
+          <view class="_p data-v-5436435e">楼层：
+            <label class="_span data-v-5436435e">1层</label>
+          </view>
+          <view class="_p data-v-5436435e">类型：
+            <label class="_span data-v-5436435e">商业街</label>
+          </view>
+          <view class="_p data-v-5436435e">免租期：
+            <label class="_span data-v-5436435e">暂无</label>
+          </view>
+          <view class="_p data-v-5436435e">历史经营：
+            <label class="_span data-v-5436435e">餐饮美食</label>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-5436435e location">
+        <view class="_p data-v-5436435e location_title">时尚购物广场</view>
+        <view class="_p data-v-5436435e location_point">北市 - 河北小学</view>
+      </view>
+    </view>
+    <view class="_div data-v-5436435e housedevice">
+      <view class="_div data-v-5436435e title">配套设施</view>
+      <view class="_div data-v-5436435e deviceList">
+        <view class="_div data-v-5436435e list_item" wx:key="index" key="{{index}}" wx:for="{{deviceList}}" wx:for-index="index" wx:for-item="item">
+          <image class="_image data-v-5436435e icon" src="../../../static/fangyuan.png"></image>
+          <view class="_p data-v-5436435e">客梯</view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-5436435e housedesc">
+      <view class="_div data-v-5436435e houseTitle">房源描述</view>
+      <view class="_div data-v-5436435e content"> 转租四通商铺大湖大厦阿杜我前端吃撒多好玩爱神的箭爱上了， 转租四通商铺大湖大厦阿杜我前端吃撒多好玩爱神的箭爱上了。 转租四通商铺大湖大厦阿杜我前端吃撒多好玩爱神的箭爱上了， 转租四通商铺大湖大厦阿杜我前端吃撒多好玩爱神的箭爱上了 </view>
+    </view>
+    <view class="_footer data-v-5436435e call">
+      <view class="_div data-v-5436435e phoneName">
+        <view class="_div data-v-5436435e avatar">
+          <view class="_i data-v-5436435e icon iconfont icon-profile"></view>
+        </view>
+        <view class="_div data-v-5436435e name">
+          <view class="_p data-v-5436435e">赵云</view>
+          <view style="color:#666" class="_p data-v-5436435e">联系人</view>
+        </view>
+      </view>
+      <view class="_div data-v-5436435e phoneNum"> 电话咨询 </view>
+    </view>
+  </view>
+</template>

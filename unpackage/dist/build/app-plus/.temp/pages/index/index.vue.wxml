@@ -1,0 +1,20 @@
+<template name="cbc9cd80">
+  <view class="_view data-v-a2745960 content">
+    <view class="_view data-v-a2745960 hot">
+      <text class="_text data-v-a2745960 hot_text">热门推荐</text>
+    </view>
+    <view class="_view data-v-a2745960 shop_list">
+      <view class="_view data-v-a2745960 shop_item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'zf3-0-'+index}}" data-comkey="{{$k}}" wx:for="{{shopList}}" wx:for-index="index" wx:for-item="item">
+        <image class="_image data-v-a2745960 item_img" src="../../static/shop.jpg"></image>
+        <view class="_view data-v-a2745960 item_info">
+          <view class="_view data-v-a2745960 item_name">河大北区商业街</view>
+          <view class="_view data-v-a2745960 item_price">
+            <text class="_text data-v-a2745960 priceCount">1200</text>元/月起</view>
+          <view class="_view data-v-a2745960 item_point">
+            <text class="_text data-v-a2745960">80</text>m2
+            <text class="_text data-v-a2745960"> | </text> 北市-北市区周边</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

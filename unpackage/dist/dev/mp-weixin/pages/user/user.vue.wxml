@@ -1,0 +1,35 @@
+<template name="52ca2b34">
+  <view class="_view data-v-1e89894a user">
+    <view class="_view data-v-1e89894a userinfo">
+      <view class="_view data-v-1e89894a avatar"></view>
+      <view class="_view data-v-1e89894a user-data">
+        <view class="_view data-v-1e89894a name">测试</view>
+        <view class="_view data-v-1e89894a edit" bindtap="handleProxy" data-eventid="{{'JtS-0'}}" data-comkey="{{$k}}">查看并编辑个人资料</view>
+      </view>
+    </view>
+    <view class="_view data-v-1e89894a">
+      <view class="_view data-v-1e89894a cell" style="margin:10px 0" bindtap="handleProxy" data-eventid="{{'ljH-1'}}" data-comkey="{{$k}}">
+        <view class="_view data-v-1e89894a cell_left">
+          <image src="../../static/shoucang.png" class="_image data-v-1e89894a"></image>
+          <text class="_text data-v-1e89894a">收藏的房源</text>
+        </view>
+        <image src="../../static/right.png" alt class="_image data-v-1e89894a"></image>
+      </view>
+      <view class="_view data-v-1e89894a cell" style="margin-bottom:1px" bindtap="handleProxy" data-eventid="{{'TCy-2'}}" data-comkey="{{$k}}">
+        <view class="_view data-v-1e89894a cell_left">
+          <image src="../../static/guanyuwomen.png" alt class="_image data-v-1e89894a"></image>
+          <text class="_text data-v-1e89894a">关于我们</text>
+        </view>
+        <image src="../../static/right.png" alt class="_image data-v-1e89894a"></image>
+      </view>
+      <view class="_view data-v-1e89894a cell">
+        <view class="_view data-v-1e89894a cell_left">
+          <image src="../../static/kefu.png" alt class="_image data-v-1e89894a"></image>
+          <text class="_text data-v-1e89894a">客服电话</text>
+        </view>
+        <text class="_text data-v-1e89894a">010-5612345</text>
+      </view>
+    </view>
+    <button class="_button data-v-1e89894a sing-out" bindtap="handleProxy" data-eventid="{{'vUN-3'}}" data-comkey="{{$k}}">登录</button>
+  </view>
+</template>

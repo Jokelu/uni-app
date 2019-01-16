@@ -1,0 +1,28 @@
+
+.cell {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  border-bottom: solid 1px #F5F5F5;
+  box-sizing: border-box;
+  padding: 10px;
+  background: #fff;
+}
+.label {
+  width: 60px;
+  text-align: right;
+  font-size: 14px;
+}
+.put {
+  padding-left: 15px;
+  font-size: 14px;
+}
+.btn {
+  width: 80vw;
+  background: #1296DB;
+  color: #fff;
+  margin: 20px auto;
+}

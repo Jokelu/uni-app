@@ -1,0 +1,13 @@
+
+.content {
+  height: 100%;
+  overflow: auto;
+}
+.about {
+  background: #fff;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  text-indent: 1em;
+  letter-spacing: 2px;
+  font-size: 16px;
+}

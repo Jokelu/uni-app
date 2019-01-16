@@ -1,0 +1,10 @@
+<template name="1525b3e3">
+  <view class="_view data-v-0945d720">
+    <view class="_view data-v-0945d720 avatar">
+      <text class="_text data-v-0945d720">头像</text>
+    </view>
+    <view class="_view data-v-0945d720 name">
+      <text class="_text data-v-0945d720">名字</text>
+    </view>
+  </view>
+</template>
