@@ -3,7 +3,7 @@
     <swiper class="_swiper data-v-a2745960 swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" duration="{{duration}}">
       <swiper-item wx:key="index" key="{{index}}" wx:for="{{banner}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-a2745960">
         <view class="_view data-v-a2745960 swiper-item">
-          <image class="_image data-v-a2745960 item" src="{{item.img}}" mode></image>
+          <image class="_image data-v-a2745960 item" src="{{baseImg+item.pictureUrl}}" mode></image>
         </view>
       </swiper-item>
     </swiper>
@@ -11,10 +11,10 @@
       <text class="_text data-v-a2745960 hot_text">热门推荐</text>
     </view>
     <view class="_view data-v-a2745960 shop_list">
-      <view class="_view data-v-a2745960 shop_item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'kT6-0-'+index}}" data-comkey="{{$k}}" wx:for="{{shopList}}" wx:for-index="index" wx:for-item="item">
-        <image class="_image data-v-a2745960 item_img" src="../../static/shop.jpg"></image>
+      <view class="_view data-v-a2745960 shop_item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'jgj-0-'+index}}" data-comkey="{{$k}}" wx:for="{{shopList}}" wx:for-index="index" wx:for-item="item">
+        <image class="_image data-v-a2745960 item_img" src="{{baseImg+item.imgUrl}}"></image>
         <view class="_view data-v-a2745960 item_info">
-          <view class="_view data-v-a2745960 item_name">河大北区商业街</view>
+          <view class="_view data-v-a2745960 item_name">{{item.name}}</view>
           <view class="_view data-v-a2745960 item_price">
             <text class="_text data-v-a2745960 priceCount">1200</text>元/月起</view>
           <view class="_view data-v-a2745960 item_point">

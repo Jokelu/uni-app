@@ -1,17 +1,17 @@
 <template>
 	<view>
 		<view class="cell">
-			<text class="label">手机号</text><input v-model="phone" class="put" type="text" value="" />
+			<text class="label">手机号</text><input v-model="phone" placeholder="请输入11位手机号" @input="getPhone"  class="put" type="text" />
 		</view>
 		<view class="cell">
-			<text class="label">验证码</text><input class="put" type="text" value="" />
-			<button disabled="{{disabled}}" class='login_get'>
+			<text class="label">验证码</text><input placeholder="请输入验证码" class="put" type="text" value="" />
+			<button :disabled="disabled" class='login_get'>
 				<text v-if="isGetCode" class="code" @click="sendCode">获取验证码</text>
 				<text v-if="!isGetCode" class="code">{{mesCode}}s</text>
 			</button>
 		</view>
 		<view class="cell">
-			<text class="label">密&nbsp&nbsp码</text><input class="put" password type="text" value="" />
+			<text class="label">密&nbsp &nbsp码</text><input placeholder="请输入密码" class="put" password type="text" value="" />
 		</view>
 		<button class="btn">找回密码</button>
 	</view>
@@ -23,11 +23,17 @@
 			return {
 				phone: "",
 				mesCode: 59,
+				disabled: false,
 				isGetCode: true
 			};
 		},
 		methods: {
+			getPhone(e) {
+				this.phone = e.target.value
+				console.log(e.target.value)
+			},
 			sendCode() {
+				console.log(this.phone)
 				if (!this.phone) {
 					uni.showToast({
 						title: '请输入手机号',
@@ -57,6 +63,10 @@
 
 	.put {
 		padding-left: 15px;
+		font-size: 14px;
+	}
+
+	.login_get {
 		font-size: 14px;
 	}
 

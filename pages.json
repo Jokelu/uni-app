@@ -10,14 +10,14 @@
         {
             "path" : "pages/search/search",
             "style" : {
-                "navigationBarTitleText" : "搜索房源"
+                "navigationBarTitleText" : ""
             }
         },
         {
             "path" : "pages/user/user",
             "style" : {
                 "navigationBarBackgroundColor" : "#1296db",
-                "navigationBarTitleText" : "我的"
+                "navigationBarTitleText" : ""
             }
         },
         {

@@ -1,13 +1,13 @@
 <template>
 	<view>
 		<view class="cell">
-			<text class="label">手机号</text><input class="put" type="text" value="" />
+			<text class="label">手机号</text><input placeholder="请输入11位手机号" class="put" type="text" value="" />
 		</view>
 		<view class="cell">
-			<text class="label">验证码</text><input class="put" type="text" value="" />
+			<text class="label">验证码</text><input placeholder="请输入验证码" class="put" type="text" value="" />
 		</view>
 		<view class="cell">
-			<text class="label">密&nbsp&nbsp码</text><input class="put" password type="text" value="" />
+			<text class="label">密&nbsp &nbsp码</text><input placeholder="请输入密码" class="put" password type="text" value="" />
 		</view>
 		<button class="btn">注册</button>
 	</view>

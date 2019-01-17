@@ -19,7 +19,6 @@
   width: 75px;
   height: 75px;
   border-radius: 50%;
-  background: #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;

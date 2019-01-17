@@ -26,6 +26,7 @@
 	}
 
 	.about {
+		margin-top: 10px;
 		background: #fff;
 		padding: 15px 10px;
 		box-sizing: border-box;

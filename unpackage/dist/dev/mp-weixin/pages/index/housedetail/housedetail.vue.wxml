@@ -90,7 +90,7 @@
           <view style="color:#666" class="_p data-v-5436435e">联系人</view>
         </view>
       </view>
-      <view class="_div data-v-5436435e phoneNum"> 电话咨询 </view>
+      <view class="_div data-v-5436435e phoneNum" bindtap="handleProxy" data-eventid="{{'ZN6-0'}}" data-comkey="{{$k}}"> 电话咨询 </view>
     </view>
   </view>
 </template>

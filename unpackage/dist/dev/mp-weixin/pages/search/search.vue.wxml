@@ -1,10 +1,33 @@
 <template name="3538f054">
   <view class="_view data-v-0fb7e7ac content">
+    <view class="_view data-v-0fb7e7ac search">
+      <image src="../../static/search.png" class="_image data-v-0fb7e7ac icon"></image>
+      <input class="_input data-v-0fb7e7ac put" value="" placeholder="请输入关键字搜索" />
+      <button size="mini" class="_button data-v-0fb7e7ac btn">搜索</button>
+    </view>
+    <view class="_view data-v-0fb7e7ac filter">
+      <view class="_view data-v-0fb7e7ac filter_item">
+        <text class="_text data-v-0fb7e7ac">位置</text>
+        <image src="../../static/shang.png" class="_image data-v-0fb7e7ac icon"></image>
+      </view>
+      <view class="_view data-v-0fb7e7ac filter_item">
+        <text class="_text data-v-0fb7e7ac">面积</text>
+        <image src="../../static/shang.png" class="_image data-v-0fb7e7ac icon"></image>
+      </view>
+      <view class="_view data-v-0fb7e7ac filter_item">
+        <text class="_text data-v-0fb7e7ac">行业</text>
+        <image src="../../static/shang.png" class="_image data-v-0fb7e7ac icon"></image>
+      </view>
+      <view class="_view data-v-0fb7e7ac filter_item">
+        <text class="_text data-v-0fb7e7ac">筛选</text>
+        <image src="../../static/xia.png" class="_image data-v-0fb7e7ac icon"></image>
+      </view>
+    </view>
     <view class="_view data-v-0fb7e7ac shop_list">
-      <view class="_view data-v-0fb7e7ac shop_item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'pHa-0-'+index}}" data-comkey="{{$k}}" wx:for="{{shopList}}" wx:for-index="index" wx:for-item="item">
-        <image class="_image data-v-0fb7e7ac item_img" src="../../static/shop.jpg"></image>
+      <view class="_view data-v-0fb7e7ac shop_item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'myR-0-'+index}}" data-comkey="{{$k}}" wx:for="{{shopList}}" wx:for-index="index" wx:for-item="item">
+        <image class="_image data-v-0fb7e7ac item_img" src="{{baseImg+item.imgUrl}}"></image>
         <view class="_view data-v-0fb7e7ac item_info">
-          <view class="_view data-v-0fb7e7ac item_name">河大北区商业街</view>
+          <view class="_view data-v-0fb7e7ac item_name">{{item.name}}</view>
           <view class="_view data-v-0fb7e7ac item_price">
             <text class="_text data-v-0fb7e7ac priceCount">1200</text>元/月起</view>
           <view class="_view data-v-0fb7e7ac item_point">

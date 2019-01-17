@@ -74,7 +74,7 @@
 					<p style="color:#666">联系人</p>
 				</div>
 			</div>
-			<div class="phoneNum">
+			<div class="phoneNum" @click="call">
 				电话咨询
 			</div>
 		</footer>
@@ -109,6 +109,13 @@
 				duration: 500,
 				circular: true
 			};
+		},
+		methods: {
+			call() {
+				uni.makePhoneCall({
+					phoneNumber: '15737317757' //仅为示例
+				});
+			},
 		}
 	}
 </script>

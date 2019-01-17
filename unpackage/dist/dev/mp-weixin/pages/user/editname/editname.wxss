@@ -1,0 +1,17 @@
+
+.cell {
+  box-sizing: border-box;
+  padding: 10px;
+  background: #fff;
+  margin-top: 10px;
+}
+.put {
+  padding-left: 15px;
+  font-size: 14px;
+}
+.btn {
+  width: 80vw;
+  background: #1296DB;
+  color: #fff;
+  margin: 20px auto;
+}

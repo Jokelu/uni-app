@@ -1,3 +1,21 @@
 <template name="1525b3e3">
-  <view class="_view data-v-0945d720"></view>
+  <view class="_view data-v-0945d720">
+    <view class="_view data-v-0945d720 avatar" bindtap="handleProxy" data-eventid="{{'IqD-0'}}" data-comkey="{{$k}}">
+      <text class="_text data-v-0945d720">头像</text>
+      <view class="_view data-v-0945d720 avatarRight">
+        <image class="_image data-v-0945d720 avatarImg" src="../../../static/wode.png" mode></image>
+        <image class="_image data-v-0945d720 right" src="../../../static/right.png" mode></image>
+      </view>
+    </view>
+    <view class="_view data-v-0945d720 name" bindtap="handleProxy" data-eventid="{{'nYD-1'}}" data-comkey="{{$k}}">
+      <text class="_text data-v-0945d720">名字</text>
+      <image class="_image data-v-0945d720 right" src="../../../static/right.png" mode></image>
+    </view>
+    <view class="_view data-v-0945d720 mask" hidden="{{!(isShow)}}" bindtap="handleProxy" data-eventid="{{'oTu-2'}}" data-comkey="{{$k}}"></view>
+    <view class="_view data-v-0945d720 pop {{[isShow ? 'isPop' : '']}}">
+      <view class="_view data-v-0945d720 row" bindtap="handleProxy" data-eventid="{{'XS2-3'}}" data-comkey="{{$k}}"> 拍照 </view>
+      <view class="_view data-v-0945d720 row" bindtap="handleProxy" data-eventid="{{'YSq-4'}}" data-comkey="{{$k}}"> 从手机相册选择 </view>
+      <view class="_view data-v-0945d720 row" bindtap="handleProxy" data-eventid="{{'89x-5'}}" data-comkey="{{$k}}"> 取消 </view>
+    </view>
+  </view>
 </template>

@@ -1,15 +1,15 @@
 <template>
 	<view class="user">
 		<view class="userinfo">
-			<view class="avatar"></view>
-			<view class="user-data">
-				<view class="name">测试</view>
-				<view class="edit" @click="editUserInfo">查看并编辑个人资料</view>
+			<image src="../../static/shop.jpg" class="avatar"></image>
+			<view class="user-data" @click="editUserInfo">
+				<view class="name">冬至</view>
+				<view class="edit" >查看并编辑个人资料</view>
 			</view>
 		</view>
 		<view class="">
 			<view class="cell" style="margin:10px 0" @click="toSelect">
-				<view class="cell_left" >
+				<view class="cell_left">
 					<image src="../../static/shoucang.png"></image>
 					<text>收藏的房源</text>
 				</view>
@@ -22,7 +22,7 @@
 				</view>
 				<image src="../../static/right.png" alt=""></image>
 			</view>
-			<view class="cell">
+			<view class="cell" @click="call">
 				<view class="cell_left">
 					<image src="../../static/kefu.png" alt=""></image>
 					<text>客服电话</text>
@@ -57,6 +57,11 @@
 					url: 'aboutme/aboutme'
 				})
 			},
+			call() {
+				uni.makePhoneCall({
+					phoneNumber: '15737317757' //仅为示例
+				});
+			},
 			login() {
 				uni.navigateTo({
 					url: 'login/login'
@@ -86,7 +91,6 @@
 		width: 75px;
 		height: 75px;
 		border-radius: 50%;
-		background: #fff;
 		display: flex;
 		align-items: center;
 		justify-content: center;

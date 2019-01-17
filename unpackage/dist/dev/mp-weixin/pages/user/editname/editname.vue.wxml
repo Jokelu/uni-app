@@ -1,3 +1,8 @@
 <template name="1e1011e3">
-  <view class="_view data-v-e67eba40"></view>
+  <view class="_view data-v-e67eba40">
+    <view class="_view data-v-e67eba40 cell">
+      <input type="text" placeholder="请输入名字" class="_input data-v-e67eba40 put" value="" />
+    </view>
+    <button class="_button data-v-e67eba40 btn">完成</button>
+  </view>
 </template>

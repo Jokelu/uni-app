@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view class="content">
 		<view class="shop_list">
 			<view class="shop_item" v-for="(item, index) in shopList" :key="index" @click="toDetail">
 				<image class="item_img" src="../../../static/shop.jpg"></image>

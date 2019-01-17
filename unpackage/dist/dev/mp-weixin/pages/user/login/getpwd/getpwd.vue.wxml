@@ -2,16 +2,19 @@
   <view class="_view data-v-6c7711ba">
     <view class="_view data-v-6c7711ba cell">
       <text class="_text data-v-6c7711ba label">手机号</text>
-      <input class="_input data-v-6c7711ba put" type="text" value="" />
+      <input value="{{phone}}" bindinput="handleProxy" placeholder="请输入11位手机号" class="_input data-v-6c7711ba put" type="text" data-eventid="{{'9bF-0'}}" data-comkey="{{$k}}" />
     </view>
     <view class="_view data-v-6c7711ba cell">
       <text class="_text data-v-6c7711ba label">验证码</text>
-      <input class="_input data-v-6c7711ba put" type="text" value="" />
-      <text class="_text data-v-6c7711ba code" bindtap="handleProxy" data-eventid="{{'I73-0'}}" data-comkey="{{$k}}">{{mesCode}}</text>
+      <input placeholder="请输入验证码" class="_input data-v-6c7711ba put" type="text" value="" />
+      <button disabled="{{disabled}}" class="_button data-v-6c7711ba login_get">
+        <text wx:if="{{isGetCode}}" class="_text data-v-6c7711ba code" bindtap="handleProxy" data-eventid="{{'0FO-1'}}" data-comkey="{{$k}}">获取验证码</text>
+        <text wx:if="{{!isGetCode}}" class="_text data-v-6c7711ba code">{{mesCode}}s</text>
+      </button>
     </view>
     <view class="_view data-v-6c7711ba cell">
-      <text class="_text data-v-6c7711ba label">密  码</text>
-      <input class="_input data-v-6c7711ba put" password type="text" value="" />
+      <text class="_text data-v-6c7711ba label">密   码</text>
+      <input placeholder="请输入密码" class="_input data-v-6c7711ba put" password type="text" value="" />
     </view>
     <button class="_button data-v-6c7711ba btn">找回密码</button>
   </view>

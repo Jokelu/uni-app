@@ -4,7 +4,7 @@
 		 :duration="duration">
 			<swiper-item v-for="(item,index) in banner" :key="index">
 				<view class="swiper-item">
-					<image class="item" :src="item.img" mode=""></image>
+					<image class="item" :src="baseImg+item.pictureUrl" mode=""></image>
 				</view>
 			</swiper-item>
 		</swiper>
@@ -13,9 +13,9 @@
 		</view>
 		<view class="shop_list">
 			<view class="shop_item" v-for="(item, index) in shopList" :key="index" @click="toDetail">
-				<image class="item_img" src="../../static/shop.jpg"></image>
+				<image class="item_img" :src="baseImg+item.imgUrl"></image>
 				<view class="item_info">
-					<view class="item_name">河大北区商业街</view>
+					<view class="item_name">{{item.name}}</view>
 					<view class="item_price"><text class="priceCount">1200</text>元/月起</view>
 					<view class="item_point"><text>80m&sup2</text><text> | </text> 北市-北市区周边</view>
 				</view>
@@ -29,53 +29,43 @@
 		data() {
 			return {
 				title: 'Hello',
-				shopList: [{
-						name: "角门东"
-					},
-					{
-						name: "角门东"
-					},
-					{
-						name: "角门东"
-					},
-					{
-						name: "角门东"
-					},
-					{
-						name: "角门东"
-					},
-					{
-						name: "角门东"
-					}
-				],
-				banner: [{
-						url: "javascript:",
-						img: "https://ww1.sinaimg.cn/large/663d3650gy1fq66vvsr72j20p00gogo2.jpg",
-						title: "送你一朵fua"
-					},
-					{
-						url: "javascript:",
-						img: "https://ww1.sinaimg.cn/large/663d3650gy1fq66vw1k2wj20p00goq7n.jpg",
-						title: "送你一辆车"
-					},
-					{
-						url: "javascript:",
-						img: "https://static.vux.li/demo/5.jpg", // 404
-						title: "送你一次旅行",
-						fallbackImg: "https://ww1.sinaimg.cn/large/663d3650gy1fq66vw50iwj20ff0aaaci.jpg"
-					}
-				],
+				shopList: [],
+				banner: [],
 				indicatorDots: true,
 				autoplay: true,
 				interval: 2000,
 				duration: 500,
-				circular: true
+				circular: true,
+				baseImg: "https://bianlimall-public.oss-cn-beijing.aliyuncs.com/",
 			}
 		},
 		onLoad() {
-
+			this.initData()
 		},
 		methods: {
+			initData() {
+				uni.request({
+					url: `https://dev.bianlimall.com/mall/banner`, //仅为示例，并非真实接口地址。
+					data: {},
+					header: {},
+					success: (res) => {
+						this.banner = res.data.data
+					}
+				});
+				uni.request({
+					url: `https://dev.bianlimall.com/mall/homePage`, //仅为示例，并非真实接口地址。
+					data: {},
+					header: {},
+					success: (res) => {
+						let data = res.data.data
+						let arr = []
+						data.map(item => {
+							arr = [...arr, ...item.commercialInfoList]
+						})
+						this.shopList = arr
+					}
+				});
+			},
 			toDetail() {
 				uni.navigateTo({
 					url: 'housedetail/housedetail'

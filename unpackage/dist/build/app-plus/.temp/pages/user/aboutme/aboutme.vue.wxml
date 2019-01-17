@@ -1,3 +1,5 @@
 <template name="477ab8d6">
-  <view class="_view data-v-1ce6aa0c"></view>
+  <view class="_view data-v-1ce6aa0c content">
+    <view class="_view data-v-1ce6aa0c about"> 关于我们的介绍关于我们的介绍关于我们的介绍， 关于我们的介绍关于我们的介绍关于我们的介绍， 关于我们的介绍关于我们的介绍。关于我们的介绍关于我们的介绍 关于我们的介绍关于我们的介绍，关于我们的介绍关于我们的介绍 </view>
+  </view>
 </template>

@@ -20,6 +20,12 @@
   padding-left: 15px;
   font-size: 14px;
 }
+.login_get {
+  font-size: 14px;
+}
+.code {
+  font-size: 14px;
+}
 .btn {
   width: 80vw;
   background: #1296DB;
